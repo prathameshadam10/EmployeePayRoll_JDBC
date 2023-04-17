@@ -1,3 +1,9 @@
 UC1 -> create database payroll_service;
        use payroll_service;
        show databases;
+UC2 -> create table employee_payroll(
+       id int not null auto_increment primary key,
+       name varchar(30) not null,
+       salary double not null,
+       start_date date not null);
+
