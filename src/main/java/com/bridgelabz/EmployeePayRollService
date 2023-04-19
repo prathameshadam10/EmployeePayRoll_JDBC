@@ -98,6 +98,17 @@ UC10 -> update employee_payroll set department = 'Sales'
         update employee set salary=65000 where emp_id =5;
 
         select salary from employee where emp_name ="Rutika";
+        
+UC12 -> select * from employee where start_date between cast('2021-09-09' AS Date) and Date(now());
+        delete from employee where emp_id=6 or emp_id = 7 or emp_id=8 or emp_id = 9 or emp_id =10;
+
+        select SUM(salary) from employee where gender = 'M' group by gender;
+        select Avg(salary) from employee where gender = 'F' group by gender;
+        select min(Salary) from employee where gender = 'M' group by gender;
+        select max(Salary) from employee where gender = 'M' group by gender;
+        select count(Salary) from employee where gender = 'M' group by gender;
+        
+        
        
         
         
